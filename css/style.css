@@ -110,3 +110,17 @@ form button {
 form button:hover {
   background-color: #0056b3;
 }
+
+/* Hover Effect for Input Fields and Textarea */
+form input:hover,
+form textarea:hover {
+  border-color: #0056b3; /* Change the border color */
+  box-shadow: 0 0 8px rgba(0, 86, 179, 0.3); /* Add a light blue glow effect */
+}
+
+/* Hover Effect for Submit Button */
+form button:hover {
+  background-color: #0056b3; /* Darken the blue color */
+  transform: scale(1.05); /* Slightly enlarge the button */
+  transition: all 0.3s ease; /* Smooth transition for background and scale */
+}
