@@ -1,3 +1,9 @@
+
+require("dotenv").config();
+console.log("EMAIL_USER:", process.env.EMAIL_USER);
+console.log("EMAIL_PASS:", process.env.EMAIL_PASS);
+console.log("RECEIVER_EMAIL:", process.env.RECEIVER_EMAIL);
+
 const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
@@ -23,15 +29,15 @@ app.post("/submit-form", (req, res) => {
     const transporter = nodemailer.createTransport({
         service: "gmail",
         auth: {
-            user: "your-email@gmail.com", // Replace with your email
-            pass: "your-email-password"    // Replace with your email password
+            user: process.env.EMAIL_USER,
+            pass: process.env.EMAIL_PASS
         }
     });
 
     // Email options
     const mailOptions = {
         from: email,
-        to: "your-email@example.com", // Replace with your email
+        to: process.env.RECEIVER_EMAIL, // Replace with your email
         subject: `New Contact Form Submission from ${name}`,
         text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
     };
