@@ -1,14 +1,14 @@
 /* General Styling for the Page */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: #adf53a;
   margin: 0;
   padding: 0;
   color: #333;
 }
 
 header {
-  background-color: #007BFF;
+  background-color: #3b8ee7;
   color: white;
   padding: 20px;
   text-align: center;
@@ -36,7 +36,7 @@ nav ul li a {
 footer {
   text-align: center;
   padding: 10px;
-  background-color: #007BFF;
+  background-color: #3b8ee7;
   color: white;
   position: fixed;
   width: 100%;
@@ -58,6 +58,17 @@ section {
 h2 {
   color: #007BFF;
   text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+section ul {
+  text-align: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* Form Styling */

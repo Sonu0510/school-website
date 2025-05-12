@@ -6,20 +6,20 @@ function validateForm() {
 
   // Validate name (it should not be empty)
   if (name === "") {
-    alert("Name is required.");
+    showMessage("Name is required.", false);
     return false;
   }
 
   // Validate email (it should be a valid email format)
   let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
   if (!emailPattern.test(email)) {
-    alert("Please enter a valid email address.");
+    showMessage("Please enter a valid email.", false);
     return false;
   }
 
   // Validate message (it should not be empty)
   if (message === "") {
-    alert("Message is required.");
+    showMessage("Message is required.", false);
     return false;
   }
 
