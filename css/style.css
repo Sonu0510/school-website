@@ -1,7 +1,12 @@
 /* General Styling for the Page */
 body {
   font-family: Arial, sans-serif;
-  background-color: #adf53a;
+  background-image: url('../images/1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: background-image 1s ease;
+  background-color: #dcfda8;
   margin: 0;
   padding: 0;
   color: #333;
@@ -49,14 +54,14 @@ main {
 }
 
 section {
-  background-color: white;
+  background: transparent;
   padding: 20px;
   border-radius: 8px;
   margin-top: 20px;
 }
 
 h2 {
-  color: #007BFF;
+  color: #050742;
   text-align: center;
 }
 
