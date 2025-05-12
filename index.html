@@ -8,50 +8,52 @@
 </head>
 <body>
 
-  <div>
+  <div id="header">
     <header>
-    <h1>Texas Academy Sarlahi</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="admissions.html">Admissions</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+      <h1>Texas Academy Sarlahi</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="admissions.html">Admissions</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
   </div>
 
-  <div>
-     <main>
-    <section>
-      <h2>Get in Touch</h2>
-      <p>If you have any questions, feel free to reach out using the form below:</p>
-    </section>
+  <div id="background-image"></div>
 
-    <section>
-      <form action="http://localhost:3000/submit-form" method="POST" onsubmit="return validateForm()">
-        <div>
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-        </div>
+  <div id="form">
+    <main>
+      <section>
+        <h2>Get in Touch</h2>
+        <p>If you have any questions, feel free to reach out using the form below:</p>
+      </section>
 
-        <div>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
-        </div>
+      <section>
+        <form action="http://localhost:3000/submit-form" method="POST" onsubmit="return validateForm()">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
 
-        <div>
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" rows="5" required></textarea>
-        </div>
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
 
-        <div>
-          <button type="submit">Send Message</button>
-        </div>
-      </form>
-    </section>
-  </main>
+          <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <div>
+            <button type="submit">Send Message</button>
+          </div>
+        </form>
+      </section>
+    </main>
   </div>
   
   <div>

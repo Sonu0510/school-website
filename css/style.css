@@ -1,22 +1,19 @@
 /* General Styling for the Page */
 body {
   font-family: Arial, sans-serif;
-  background-image: url('../images/1.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  transition: background-image 1s ease;
   background-color: #dcfda8;
   margin: 0;
   padding: 0;
   color: #333;
 }
 
-header {
+#header {
   background-color: #3b8ee7;
   color: white;
   padding: 20px;
   text-align: center;
+  position: fixed;
+  width: 100%;
 }
 
 header h1 {
@@ -38,12 +35,26 @@ nav ul li a {
   text-decoration: none;
 }
 
+#background-image {
+  background-image: url('../images/1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  transition: background-image 1s ease;
+  height: 600px;
+  width: 100%;
+}
+
+
+#form {
+  width: 100%;
+}
+
 footer {
   text-align: center;
   padding: 10px;
   background-color: #3b8ee7;
   color: white;
-  position: fixed;
   width: 100%;
   bottom: 0;
 }
