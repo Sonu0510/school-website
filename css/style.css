@@ -8,9 +8,11 @@ body {
 }
 
 #header {
-  background-color: #3b8ee7;
-  color: white;
-  padding: 20px;
+  background-color: #d9ebff;
+  color: rgb(78, 50, 50);
+  margin: 0;
+  padding: 10px;
+  padding-top: 20px;
   text-align: center;
   position: fixed;
   width: 100%;
@@ -31,7 +33,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: rgb(78, 50, 50);
   text-decoration: none;
 }
 
@@ -39,7 +41,6 @@ nav ul li a {
   background-image: url('../images/1.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   transition: background-image 1s ease;
   height: 600px;
   width: 100%;
@@ -53,8 +54,8 @@ nav ul li a {
 footer {
   text-align: center;
   padding: 10px;
-  background-color: #3b8ee7;
-  color: white;
+  background-color: #d9ebff;
+  color: #004C4C;
   width: 100%;
   bottom: 0;
 }
