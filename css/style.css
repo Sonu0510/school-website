@@ -7,6 +7,7 @@ body {
   color: #333;
 }
 
+ /* TItle and Navigation Section */
 #header {
   background-color: #d9ebff;
   color: rgb(78, 50, 50);
@@ -18,25 +19,26 @@ body {
   width: 100%;
 }
 
-header h1 {
+#header h1 {
   margin: 0;
 }
 
-nav ul {
+#header nav ul {
   list-style-type: none;
   padding: 0;
 }
 
-nav ul li {
+#header nav ul li {
   display: inline;
   margin-right: 20px;
 }
 
-nav ul li a {
+#header nav ul li a {
   color: rgb(78, 50, 50);
   text-decoration: none;
 }
 
+/* Background image div */
 #background-image {
   background-image: url('../images/1.jpg');
   background-size: cover;
@@ -46,50 +48,27 @@ nav ul li a {
   width: 100%;
 }
 
-
-#form {
+/* Get in Touch Form Styling */
+/* #form {
   width: 100%;
-}
+} */
 
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #d9ebff;
-  color: #004C4C;
-  width: 100%;
-  bottom: 0;
-}
-
-/* Main Styling */
-main {
-  padding: 20px;
-}
-
-section {
+#form section {
   background: transparent;
   padding: 20px;
   border-radius: 8px;
-  margin-top: 20px;
 }
 
-h2 {
+#form h2 {
   color: #050742;
   text-align: center;
 }
 
-p {
+#form p {
   text-align: center;
 }
 
-section ul {
-  text-align: center;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-/* Form Styling */
-form {
+#form section form {
   max-width: 600px;
   margin: 0 auto;
   background-color: #fff;
@@ -98,11 +77,11 @@ form {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-form div {
+#form section form div {
   margin-bottom: 15px;
 }
 
-form label {
+#form section form label {
   font-size: 1.1em;
   color: #333;
   display: block;
@@ -147,8 +126,19 @@ form textarea:hover {
 }
 
 /* Hover Effect for Submit Button */
-form button:hover {
+#form section form button:hover {
   background-color: #0056b3; /* Darken the blue color */
   transform: scale(1.05); /* Slightly enlarge the button */
   transition: all 0.3s ease; /* Smooth transition for background and scale */
+}
+
+
+/* Footer section */
+#footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #d9ebff;
+  color: #004C4C;
+  width: 100%;
+  bottom: 0;
 }
